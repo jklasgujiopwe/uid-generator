@@ -100,7 +100,7 @@ public class CachedUidGeneratorTest {
      * Do generating
      */
     private void doGenerate(Set<Long> uidSet, int index) {
-        long uid = uidGenerator.getUID();
+        long uid = uidGenerator.getUID(99654069236f25705e790b17);
         String parsedInfo = uidGenerator.parseUID(uid);
         boolean existed = !uidSet.add(uid);
         if (existed) {
